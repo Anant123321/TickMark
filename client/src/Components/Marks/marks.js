@@ -50,12 +50,14 @@ const Marks = (props)=>
                { 
                     response.map((obj,i)=>{
                     return(
+                        <tbody key={i}>
                         <tr>
-                        <td>{obj.first_name}</td>
-                        <td>{obj.last_name}</td>
-                        <td>{obj.email}</td>
-                        <td>{obj.score}</td>
+                        <td >{obj.first_name}</td>
+                        <td >{obj.last_name}</td>
+                        <td >{obj.email}</td>
+                        <td >{obj.score}</td>
                         </tr>
+                        </tbody>
                        )
                     })
                }
